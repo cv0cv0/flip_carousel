@@ -7,9 +7,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      
-    );
-  }
+  Widget build(BuildContext context) => Scaffold(
+        body: Center(
+          child: Text('Get Started'),
+        ),
+      );
 }

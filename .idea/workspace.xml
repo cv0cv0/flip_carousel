@@ -9,14 +9,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e782873f-6ff3-48fb-9d58-13d89cb551d8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/data/card_data.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widget/flipper_card.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widget/indicator_bar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widget/parallax_card.dart" afterDir="false" />
+    <list default="true" id="e782873f-6ff3-48fb-9d58-13d89cb551d8" name="Default" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/lib/widget/scroll_indicator.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/page/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/page/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/flipper_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/flipper_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/indicator_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/indicator_bar.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -40,24 +38,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="dart" value="25" />
+          <entry key="dart" value="29" />
           <entry key="yaml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Dart" value="25" />
+          <entry key="Dart" value="29" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dart" value="2248" />
+          <entry key="dart" value="3206" />
+          <entry key="txt" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Dart" value="2248" />
+          <entry key="Dart" value="3206" />
+          <entry key="PLAIN_TEXT" value="19" />
         </counts>
       </usages-collector>
     </session>
@@ -76,10 +76,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/page/home_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="26">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,15 +88,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/widget/flipper_card.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+            <state relative-caret-position="1201">
+              <caret line="112" column="46" selection-start-line="112" selection-start-column="46" selection-end-line="112" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/widget/indicator_bar.dart">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/widget/scroll_indicator.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -118,10 +137,11 @@
         <option value="$PROJECT_DIR$/lib/data/card_data.dart" />
         <option value="$PROJECT_DIR$/lib/widget/card_widget.dart" />
         <option value="$PROJECT_DIR$/lib/widget/card_flipper.dart" />
-        <option value="$PROJECT_DIR$/lib/widget/flipper_card.dart" />
-        <option value="$PROJECT_DIR$/lib/page/home_page.dart" />
         <option value="$PROJECT_DIR$/lib/widget/parallax_card.dart" />
         <option value="$PROJECT_DIR$/lib/widget/indicator_bar.dart" />
+        <option value="$PROJECT_DIR$/lib/widget/scroll_indicator.dart" />
+        <option value="$PROJECT_DIR$/lib/page/home_page.dart" />
+        <option value="$PROJECT_DIR$/lib/widget/flipper_card.dart" />
       </list>
     </option>
   </component>
@@ -308,7 +328,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538728414976" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538746766495" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -365,6 +385,14 @@
       <option name="presentableId" value="Default" />
       <updated>1538643284909</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1538740061150</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538740061151</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -382,14 +410,14 @@
       <window_info id="UI Designer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38064516" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947533" weight="0.38064516" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32903227" />
       <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052464" side_tool="true" weight="0.38064516" />
       <window_info anchor="bottom" id="Logcat" order="10" weight="0.32903227" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32903227" />
       <window_info anchor="bottom" id="Terminal" order="12" />
@@ -408,6 +436,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -463,23 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/flutter/packages/flutter/lib/src/animation/animation_controller.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="352" column="40" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/page/home_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/data/card_data.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -494,9 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/widget/indicator_bar.dart">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/widget/parallax_card.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -507,10 +519,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Android/flutter/bin/cache/pkg/sky_engine/lib/ui/painting.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2563">
+          <caret line="1036" column="6" selection-start-line="1036" selection-start-column="6" selection-end-line="1036" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/widget/indicator_bar.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/widget/scroll_indicator.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/page/home_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/flutter/packages/flutter/lib/src/animation/animation_controller.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="236" column="9" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/widget/flipper_card.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        <state relative-caret-position="1201">
+          <caret line="112" column="46" selection-start-line="112" selection-start-column="46" selection-end-line="112" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

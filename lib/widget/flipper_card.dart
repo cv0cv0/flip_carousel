@@ -7,8 +7,9 @@ import '../widget/parallax_card.dart';
 
 class FlipperCard extends StatefulWidget {
   final List<CardViewModel> cards;
+  final Function(double percent) onScroll;
 
-  const FlipperCard(this.cards);
+  const FlipperCard({this.cards, this.onScroll});
 
   @override
   _FlipperCardState createState() => _FlipperCardState();
@@ -32,6 +33,10 @@ class _FlipperCardState extends State<FlipperCard>
     )..addListener(() => setState(() {
           scrollPercent = lerpDouble(finishScrollStartPercent,
               finishScrollEndPercent, finishScrollController.value);
+
+          if (widget.onScroll != null) {
+            widget.onScroll(scrollPercent);
+          }
         }));
   }
 
@@ -58,20 +63,27 @@ class _FlipperCardState extends State<FlipperCard>
   }
 
   Widget _buildCard(int index, CardViewModel viewModel) {
-    final count=widget.cards.length;
+    final count = widget.cards.length;
     final scrollPercentForIndex = scrollPercent / (1 / count);
-    final parallax=scrollPercent-index/count;
+    final parallax = scrollPercent - index / count;
 
     return FractionalTranslation(
       translation: Offset(index - scrollPercentForIndex, 0.0),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: ParallaxCard(
-          parallax: parallax,
-          viewModel: viewModel,
+        child: Transform(
+          transform: _buildCardProjection(scrollPercentForIndex-index),
+          child: ParallaxCard(
+            parallax: parallax,
+            viewModel: viewModel,
+          ),
         ),
       ),
     );
+  }
+
+  Matrix4 _buildCardProjection(double percent) {
+
   }
 
   void _onHorizontalDragStart(DragStartDetails details) {
@@ -87,6 +99,10 @@ class _FlipperCardState extends State<FlipperCard>
     setState(() {
       scrollPercent = (startDragScrollPercent - percent / count)
           .clamp(0.0, 1.0 - 1 / count);
+
+      if (widget.onScroll != null) {
+        widget.onScroll(scrollPercent);
+      }
     });
   }
 

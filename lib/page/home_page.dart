@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../widget/flipper_card.dart';
 import '../data/card_data.dart';
+import '../widget/flipper_card.dart';
+import '../widget/indicator_bar.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,6 +10,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  double scrollPercent = 0.0;
+
   @override
   Widget build(BuildContext context) => Scaffold(
         body: SafeArea(
@@ -17,12 +20,16 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: <Widget>[
               Expanded(
-                child: FlipperCard(cards),
+                child: FlipperCard(
+                  cards: cards,
+                  onScroll: (percent) {
+                    setState(() => scrollPercent = percent);
+                  },
+                ),
               ),
-              Container(
-                width: double.infinity,
-                height: 50.0,
-                color: Colors.grey,
+              IndicatorBar(
+                count: cards.length,
+                percent: scrollPercent,
               )
             ],
           ),

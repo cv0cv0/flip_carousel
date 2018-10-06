@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -72,7 +73,7 @@ class _FlipperCardState extends State<FlipperCard>
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Transform(
-          transform: _buildCardProjection(scrollPercentForIndex-index),
+          transform: _buildCardProjection(scrollPercentForIndex - index),
           child: ParallaxCard(
             parallax: parallax,
             viewModel: viewModel,
@@ -83,7 +84,25 @@ class _FlipperCardState extends State<FlipperCard>
   }
 
   Matrix4 _buildCardProjection(double percent) {
+    final perspective = 0.002;
+    final radius = 1.0;
+    final angle = percent * pi / 8;
+    final horizontalTranslation = 0.0;
 
+    Matrix4 projection = Matrix4.identity()
+      ..setEntry(0, 0, 1 / radius)
+      ..setEntry(1, 1, 1 / radius)
+      ..setEntry(3, 2, -perspective)
+      ..setEntry(2, 3, -radius)
+      ..setEntry(3, 3, perspective * radius + 1.0);
+
+    projection *= Matrix4.translationValues(
+            horizontalTranslation + 300.0, 0.0, 0.0) *
+        Matrix4.rotationY(angle) *
+        Matrix4.translationValues(0.0, 0.0, radius) *
+        Matrix4.translationValues(-300.0, 0.0, 0.0);
+
+    return projection;
   }
 
   void _onHorizontalDragStart(DragStartDetails details) {
